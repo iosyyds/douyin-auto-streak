@@ -1,0 +1,5 @@
+[provider]
+name = "python"
+
+[start]
+cmd = "bash start.sh"
