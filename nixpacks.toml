@@ -1,0 +1,31 @@
+[provider]
+name = "python"
+
+[build]
+pipPackages = "-r requirements.txt"
+nixPkgs = [
+  "nss",
+  "nspr",
+  "alsa-lib",
+  "atk",
+  "atkmm",
+  "cairo",
+  "cairomm",
+  "cups",
+  "libdrm",
+  "libxkbcommon",
+  "libXcomposite",
+  "libXdamage",
+  "libXfixes",
+  "libXrandr",
+  "mesa",
+  "pango",
+  "pangomm",
+  "xvfb",
+]
+cmds = [
+  "python -m playwright install chromium"
+]
+
+[start]
+cmd = "python app.py"
