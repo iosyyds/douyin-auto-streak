@@ -1,2 +1,6 @@
-# douyin-auto-streak
-抖音云端自动续火花 - 每天定时自动给抖音好友发消息续火花，支持网页管理后台、扫码登录、多账号管理
+# 抖音云端续火花
+
+## 部署说明
+- Python 3.11 + FastAPI + Playwright
+- Docker 部署，自动安装 Chromium
+- 配置 AUTH_TOKEN 环境变量设置访问密码
